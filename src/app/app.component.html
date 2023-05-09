@@ -1,12 +1,14 @@
-<button (click)="this.isOpen = !this.isOpen">change event</button>
+<!-- <button (click)="this.isOpen = !this.isOpen">change event</button>
 
 now  is {{isOpen ? 'open' : 'close'}}
 <div class="box" [@openClose]="isOpen ? 'open' : 'close'">
-  <p>hello</p>
-</div>
+
+</div> -->
 
 
 <button (click)="this.isShown = !this.isShown">change isShown </button>
 <div @myTrigger *ngIf="isShown">
-aaaaa
+  <li>hello</li>
+  <li>hello2</li>
+  <li>hello3</li>
 </div>
