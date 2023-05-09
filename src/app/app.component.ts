@@ -18,7 +18,7 @@ import { Component } from '@angular/core';
       state(
         'open',
         style({
-          backgroundColor: 'yellow',
+          backgroundColor: 'blue',
         })
       ),
 
@@ -37,11 +37,15 @@ import { Component } from '@angular/core';
       ]),
       transition('* => open', [
         animate(
-          '2s',
+          '2.5s',
           keyframes([
-            style({ backgroundColor: 'yellow' }),
-            style({ backgroundColor: 'red' }),
-            style({ backgroundColor: 'green' }),
+            style({ backgroundColor: 'yellow',width: '350px', height: '350px' }),
+            style({ backgroundColor: 'red', width: '200px', height: '200px' }),
+            style({
+              backgroundColor: 'green',
+              height: '*',
+              width: '*'
+            }),
           ])
         ),
       ]),
