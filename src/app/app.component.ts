@@ -49,9 +49,15 @@ import { Component } from '@angular/core';
         ),
       ]),
     ]),
+    trigger('myTrigger', [
+      transition(':leave', [
+        animate('2s', style({ opacity: 0 }))
+      ]),
+    ])
   ],
 })
 export class AppComponent {
   isOpen = true;
+  isShown = true;
   title = 'angular-animation';
 }

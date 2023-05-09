@@ -2,3 +2,9 @@
 
 now  is {{isOpen ? 'open' : 'close'}}
 <div class="box" [@openClose]="isOpen ? 'open' : 'close'"></div>
+
+
+<button (click)="this.isShown = !this.isShown">change isShown </button>
+<div @myTrigger *ngIf="isShown">
+aaaaa
+</div>
