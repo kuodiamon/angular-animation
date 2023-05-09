@@ -32,8 +32,7 @@ import { Component } from '@angular/core';
 
       // 用 transition 定義狀態轉換時，元件該怎麼動作
       transition('open => close', [
-        animate('3s', style({ opacity: 0.3 })),
-        animate('2s'),
+        animate('3s', style({ opacity: 0 })),
       ]),
       transition('* => open', [
         animate(
