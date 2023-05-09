@@ -34,18 +34,27 @@ import { Component } from '@angular/core';
       transition('open => close', [animate('3s')]),
       transition('* => open', [
         animate(
-          '2.5s',
+          '3s',
           keyframes([
             style({
               backgroundColor: 'yellow',
-              width: '350px',
-              height: '350px',
+              transform: 'translateX(0px)',
             }),
-            style({ backgroundColor: 'red', width: '200px', height: '200px' }),
+            style({
+              backgroundColor: 'purple',
+              transform: 'translateX(50px)',
+            }),
+            style({
+              backgroundColor: 'pink',
+              transform: 'translateX(100px)',
+            }),
             style({
               backgroundColor: 'green',
-              height: '*',
-              width: '*',
+              transform: 'translateX(50px)'
+            }),
+            style({
+              backgroundColor: 'red',
+              transform: 'translateX(0px)'
             }),
           ])
         ),
