@@ -1,0 +1,4 @@
+<button (click)="this.isOpen = !this.isOpen">change event</button>
+
+now  is {{isOpen ? 'open' : 'close'}}
+<div class="box" [@openClose]="isOpen ? 'open' : 'close'"></div>
